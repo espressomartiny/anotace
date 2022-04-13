@@ -1,6 +1,6 @@
 ---
 title: "ANOTAČNÍ MANUÁL"
-author: "Martina Oogappel"
+author: ""
 date: "13 2 2022"
 output: 
   html_document:

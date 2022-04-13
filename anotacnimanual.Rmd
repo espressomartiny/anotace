@@ -1,0 +1,317 @@
+---
+title: "ANOTAČNÍ MANUÁL"
+author: "Martina Oogappel"
+date: "13 2 2022"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# proměnné
+
+![](https://youtu.be/k_PgDA01utM)
+
+## NP
+### objekt
+
+``` obj [2] ```
+
+
+
+přepíše se lemma realizace objektu:
+
+
++ Je však nutno *skončit* s bezprávím → bezpráví  
++ We hebben eindelijk de puzzel *voltooid* → puzzel
+
+
+### postmodifikace	
+
+``` postmod [3] ```
+
+pokud po substantivu [obj] následuje postmodifikátor, přepíše se jeho realizace, 
+
+
++ Právě skončil službu u Karla Sverkerssona na ostrově Visingsö → u Karla Sverkerssona na ostrově Visingsö
++ Ik begon mijn speurtochten in de Milanese bibliotheken → in de Milanese bibliotheken
+
+### komplexita postmodifikace	
+
+``` postmod_len_ch + postmod_len_w [4] ```
+
+délka ve slovech/znacích, počítá se automaticky 
+
+### premodifikace	
+
+``` premod [5] ```
+
+pokud se před substantivem ```obj``` objevuje premodifikátor, značí se jeho typ:
+
+```adj``` [dokončí velký román, zij voltooit haar ultieme trilogie]  
+```num``` [dokončí druhý román, zij voltooit de tweede trilogie]  
+```dem``` [dokončí ten román, zij voltooit deze trilogie]  
+```poss``` [dokončí svůj román, zij voltooit haar ultieme trilogie]  
+```indef``` [dokončí nějaký román, zij voltooit enkele trilogieën]  
+```art_def``` [zij voltooit de trilogie]  
+```art_indef``` [zij voltooit een trilogie]  
+
+v případě více premodifikátorů, za sebou, in order of appearance:
+
++ Už konečně dokončí ten svůj druhý román → dem poss num
++ Zij voltooit haar ultieme trilogie → poss adj
+
+### představitelnost	
+
+``` imag [6] ```
+
+míra představitelnosti spojení VP+NP na pětistupňové škále, kde 1 = nejméně představitelné, 5 = nejvíce představitelné:
+
+1. Abychom odborně stavovsky pokračovali v kultu staropruské svobody.  
+     Op 4 augustus 1997 starten ze met het systeem.
+2. Svou práci můžeš dokončit v New Yorku.  
+     Als we doorgaan met deze schertsvertoning, brengen we ze in gevaar.
+3. Pokud už jste začali cvičeními a postupy uvedenými v předchozích částech této knihy.  
+     Zodra Klement zijn verhaal had geëindigd, […]
+4. Takže už na nic nečekáme a začínáme s opevňovacími pracemi.  
+     We starten een nieuwe introductiecursus ballroomdansen voor alleenstaanden.
+5. Jak pokračuješ s knihou? Máma říkala, že ses nad tím nějak zaseknul.   
+     Hij hield zijn hoofd omhoog zodat haar hand kon doorgaan met zijn kruin en nek.  
+
+
+### inferovaní činnost	
+
+``` infer [7] ```
+
++ Téměř dostudovaná antropoložka - " jmenovala se Ines a byla rázná " - , která mu po druhé nebo třetí milostné schůzce rovnou dala na vědomí , že jejich vztah bude dočasný , protože ihned po doktorandské zkoušce chce začít s disertační prací a území , kde bude sbírat materiál , vysočina na východě Venezuely obývaná indiánským kmenem Yanomami , bylo v jejích představách už dlouho ryze soukromou záležitostí . 
+ 🡪 psát
++ Ik denk niet dat het me lukt, nu de lessen weer beginnen → geven
+
+### derivační řetězec	
+
+``` der [8] ```
+
+napadá vás sloveso se stejným kořenem, jako má objekt ```obj```, které má stejný nebo podobný význam jako činnost, která se s daným objektem obvykle pojí? Pokud ano, značí se v, jinak n, př.:
+
++film/film → v [protože existuje sloveso filmovat/filmen, odvozené od substantiva film s významem ‚vytvářet film‘)
++škola/school → n [existuje sice sloveso školit/scholen, které je od substantiva škola odvozené, typicky ale znamená ‚vzdělávat zaměstnance‘, což není činnost, která by se substantivem škola obvykle pojila [substantivum, se kterým se pojí, by bylo školení/scholing)] 
+
+### denotace 	
+
+``` den [9] ```
+
+substantivum ```obj``` má dějový význam [probíhá v čase] → ```ev```
+substantivum ```obj``` má objektový význam [je nějak profilovaný/uzavřený] → ```en```
+
+### míra dějovosti 	
+
+``` event [10] ```
+
+pokud je substantivum deverbativní, určuje se míra dějovosti na třístupňové škále:
+
+verbální substantiva	```3```		Vy sami jste začali s bombardováním měst.
+dějová substantiva	```2```		Hledám vhodná slova, abych začal s výslechem.
+jiná deverbativa		```1```		Myslím, že večer bychom měli začít s těmi zaklínadly.
+
+
+### míra předmětnosti	
+
+``` entity [11] ```
+
+pokud má substantivum objektový význam [(8] = en), určuje se míra předmětnosti na třístupňové škále:
+```1```   nedá se na to sáhnout, ani to vnímat jinými smysly	
+př.: Ty jsi začal tuhle dráhu. Jsi básník, ne zpěvák. 
+       	vb.:  Na afloop van de wintersemester van dit schooljaar heeft mevrouw Olga Krijtová haar
+	         werkzaamheid in het vak neerlandistiek aan de Karlsuniversiteit te Praag definitief beëindigd
+```2```   nedá se na to sáhnout, ale je to vnímatelné smysly
+př.: Začal s písničkami ještě za okupace.
+	vb.: Hij totaal doorgeslagen en begon een filippica tegen de bourgoispers
+```3```   dá se na to sáhnout
+př.: Potom začali s papírovými sáčky.
+vb.: Voor de eerste keer sinds ik het dagboek begonnen ben , heb ik een writer’s block 
+
+### artefakt	
+
+``` artef [12] ```
+
+pokud má substantivum objektový význam [(8] = en), je daný objekt produktem lidské činnosti?
+ano	y	Potom začali s papírovými sáčky. |  Voordat we de film eindigen [...]
+ne 	n	A teď nejvyšší čas začít s Magdou. | [...] zodat haar hand kon met zijn kruin en nek
+
+### vysvětlitelnost qualiovou strukturou 
+
+```	qual [13] ```
+
+značí se pouze u artefaktů
+
+ano
+agentní rolí	```a``` 	Když dokončíme tuto knihu, napíšeme další o běžci na dlouhé tratě
+telickou rolí	```t```	Mark begon met de sigaretten. Zijn moeder keek hem strak aan
+oběma		```at```
+ne			```n```
+poznámka k vysvětlitelnosti 	  ```qual_note```
+pokud je z nějakého důvodu dostupná interpretace pouze agentní, nebo pouze telickou rolí, specifikovat do poznámky, co to způsobuje [poznament sem také, pokud je pro porozumění významu substantiva relevantní nějaké adverbium)
+
+př. [pro Když dokončíme tuto knihu, napíšeme další o běžci na dlouhé tratě): Inferovaný děj vyjádřen v následující větě + v plurálu je obvyklejší knihy psát než číst
+
+### číslo np 	
+
+``` num_np [14] ```
+
+```sg```	dal se do cigarety
+```pl```	dal se do cigaret
+
+### spojení s předložkou 	
+
+``` prep [15] ```
+
+pokud je NP součástí PP, uvést předložku, př: tentokrát už nebudu mít chuť pokračovat s ‚Žirafou‘ 🡪 s
+
+## VP
+
+### predikát  
+
+``` pred [16] ```
+
+pokud sledované sloveso není predikát, přepíše se realizace predikátu, pokud je predikátem, značí se pred, př.:  Je však nutno skončit s bezprávím → být nutno
+
+### osoba+číslo 	
+
+``` pers_num [17] ```
+
+```1sg, 2sg, 3sg, 1pl, 2pl, 3pl```
+
+značí se i v případě, kdy je nevyjadřuje sledované sloveso, př.: Tentokrát už nebudu mít chuť pokračovat s ‚Žirafou‘ → 1sg
+
+### subjekt  
+
+``` sub [18] ```
+
+pokud je agens lexikálně vyjádřen, přepíše se. Závorka značí, že je mimo klauzi. Nemusí být realizovaný jako subjekt.
+“Vy jste, pane Rukavičko, pod jménem Hádek pracoval od roku čtyřicátého devátého jako vyšetřovatel Státní bezpečnosti" začal výslech můj nadřízený → nadřízený
+Prvého dne si ho starý Klapzuba důkladně prohlédl , podíval se mu na svalstvo , dech i srdce a když viděl , že princ běhá krátké i dlouhé trati jako zajíc , poklepal mu spokojeně po rameně a začal s treningem → [Klapzuba)
+
+### způsob	
+
+``` mode [19] ```
+
+```ind```
+```imp```
+```cond```
+
+###  čas	
+
+``` tense [20] ```
+pro češtinu:
+přítomný	```pres```
+minutý		```past```		 
+budoucí	```fut``` 
+
+pro nizozemštinu [dle klasických zkratek rozdělených do téhle a následující kategorie):
+tegenwoordige tijd	```tt``` 	        ik ga met mijn werk door | ik ben met mijn werk doorgegaan
+verleden tijd		```vt```	        ik ging met mijn werk door | ik was met mijn werk doorgegaan
+tegenwoordige toekomende tijd	 ttt  ik zal met mijn werk doorgaan | ik zal met mijn werk doorgegaan zijn
+verleden toekomende tijd     vtt 	ik zou met mijn werk doorgaan | ik zou met mijn werk doorgegaan zijn
+
+
+###  vid 	
+
+``` aspect [21] ```
+
+pro češtinu: ```pf``` × ```ipf```	
+pro nizozemštinu: 
+onvoltooid	```o```	ik ga / ging met mijn werk door ...
+voltooid  	```v``` 	 ik ben / was met mijn werk doorgegaan ...
+
+## S
+
+###  priming	
+
+``` prim_v [22] ```
+
+```lex```: v levém kontextu je přímo zmíněna inferovaná činnost, př.:  Zanechal výroby nábytku, poněvadž ve městě byl k dostání lepší co do kvality i možností výběru, a začal s kukačkovými hodinami a s napodobeninami ručně malovaných starodávných hraček .
+```form```: v levém kontextu se objevuje stejná struktura, př: Skončil jsi s urážením sebe sama a rodiny? Skončil jsi s označkováním celého světa? 
+```aso```: v levém kontextu se objevuje asociační anafora, př: No, jsem ráda že znovu pracuješ. Jsem ráda, že dokončíš svou knihu. 
+
+###  priming	
+
+``` prim_v_dist [23] ```
+
+### vzdálenosti primingu
+if - v rámci fráze [hypotaktický/parataktický vztah)
+ic - v rámci klauze
+oc - nad klauzí
+os - nad větou
+
+###  priming	
+
+```prim_obj [24] ```
+
+lex - v levém kontextu je přímo zmíněn objekt
+aso - v levém kontextu se objevuje asociační anafora objektu
+
+### priming	
+
+```prim_obj_dist [25] ```
+
+### vzdálenosti primingu
+
+if - v rámci fráze [hypotaktický/parataktický vztah)
+ic - v rámci klauze
+oc - nad klauzí
+os
+
+### slovosled	
+
+``` ord [26] ```
+
+post: objekt po slovese
+pre: objekt před slovesem
+
+###  typ klauze	
+
+```type_clause [27] ```
+
+hlavní main × vedlejší dep
+
+###  typ závislé klauze	
+
+``` type_dep [28] ``` 
+
+přívlastková / bijvoeglijke bijzin		rel
+příslovečná / bijwoordelijke bijzin	adv
+obsahová / inhoudsbijzin 		cont
+
+### komplexita klauze	
+
+``` compl [] ```
+
+komplexita měřena počtem slov	- přepíše se klauze, aby šlo spočítat automaticky
+
+### žánr
+
+``` [] ```
+
+dle korpusu, neanotuje se
+
+### registr
+
+``` [] ```
+
+dle korpusu, neanotuje se
+
+
+# zkratky 
+
+proměnná | id_s | id_n
+-------------- | ------- | ---
+objekt | obj | 2
+postmodifikace	| postmod | 3
+komplexita postmodifikace	| postmod_len_ch + postmod_len_w | 4
+premodifikace	| premod
+

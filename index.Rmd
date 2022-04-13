@@ -15,73 +15,73 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # proměnné
 
-![](https://youtu.be/k_PgDA01utM)
 
 ## NP
-### objekt
+### Objekt
 
 ``` obj [2] ```
 
 
 
-přepíše se lemma realizace objektu:
+Přepíše se lemma realizace objektu:
 
 
-+ Je však nutno *skončit* s bezprávím → bezpráví  
-+ We hebben eindelijk de puzzel *voltooid* → puzzel
++ Je však nutno *skončit* s **bezprávím** → bezpráví  
++ We hebben eindelijk de **puzzel** *voltooid* → puzzel
 
 
-### postmodifikace	
+### Postmodifikace	
 
 ``` postmod [3] ```
 
-pokud po substantivu [obj] následuje postmodifikátor, přepíše se jeho realizace, 
+Pokud po substantivu ```(obj)``` následuje postmodifikátor, přepíše se jeho realizace:
 
 
-+ Právě skončil službu u Karla Sverkerssona na ostrově Visingsö → u Karla Sverkerssona na ostrově Visingsö
-+ Ik begon mijn speurtochten in de Milanese bibliotheken → in de Milanese bibliotheken
++ Právě *skončil* službu **u Karla Sverkerssona na ostrově Visingsö** → u Karla Sverkerssona na ostrově Visingsö
++ Ik *begon* mijn speurtochten **in de Milanese bibliotheken** → in de Milanese bibliotheken
 
-### komplexita postmodifikace	
+### Komplexita postmodifikace	
 
 ``` postmod_len_ch + postmod_len_w [4] ```
 
-délka ve slovech/znacích, počítá se automaticky 
+Délka ve slovech/znacích, počítá se automaticky.
 
-### premodifikace	
+### Premodifikace	
 
 ``` premod [5] ```
 
-pokud se před substantivem ```obj``` objevuje premodifikátor, značí se jeho typ:
+Pokud se před substantivem ```(obj)``` objevuje premodifikátor, značí se jeho typ:
 
-```adj``` [dokončí velký román, zij voltooit haar ultieme trilogie]  
-```num``` [dokončí druhý román, zij voltooit de tweede trilogie]  
-```dem``` [dokončí ten román, zij voltooit deze trilogie]  
-```poss``` [dokončí svůj román, zij voltooit haar ultieme trilogie]  
-```indef``` [dokončí nějaký román, zij voltooit enkele trilogieën]  
-```art_def``` [zij voltooit de trilogie]  
-```art_indef``` [zij voltooit een trilogie]  
+```adj```(*dokončí* **velký** román, zij *voltooit* haar **ultieme** trilogie)  
+```nu```(*dokončí* **druhý** román, zij *voltooit* de **tweede** trilogie)    
+```dem``` (*dokončí* **ten** román, zij *voltooit* **deze** trilogie)  
+```poss``` (*dokončí* **svůj** román, zij *voltooit* **haar** ultieme trilogie)   
+```indef``` (*dokončí* **nějaký** román, zij *voltooit* **enkele** trilogieën)    
+```art_def``` (zij *voltooit* **de** trilogie)  
+```art_indef``` (zij *voltooit* **een** trilogie)  
 
-v případě více premodifikátorů, za sebou, in order of appearance:
+V případě více premodifikátorů za sebou, in order of appearance:
 
-+ Už konečně dokončí ten svůj druhý román → dem poss num
-+ Zij voltooit haar ultieme trilogie → poss adj
++ Už konečně *dokončí* ten **svůj druhý** román → dem poss num
++ Zij *voltooit* **haar ultieme** trilogie → poss adj
 
-### představitelnost	
+### Představitelnost	
 
 ``` imag [6] ```
 
-míra představitelnosti spojení VP+NP na pětistupňové škále, kde 1 = nejméně představitelné, 5 = nejvíce představitelné:
+Míra představitelnosti spojení VP+NP na sedmistupňové škále, kde ```1``` = nejméně představitelné, ```7``` = nejvíce představitelné:
 
-1. Abychom odborně stavovsky pokračovali v kultu staropruské svobody.  
-     Op 4 augustus 1997 starten ze met het systeem.
-2. Svou práci můžeš dokončit v New Yorku.  
-     Als we doorgaan met deze schertsvertoning, brengen we ze in gevaar.
-3. Pokud už jste začali cvičeními a postupy uvedenými v předchozích částech této knihy.  
-     Zodra Klement zijn verhaal had geëindigd, […]
-4. Takže už na nic nečekáme a začínáme s opevňovacími pracemi.  
-     We starten een nieuwe introductiecursus ballroomdansen voor alleenstaanden.
-5. Jak pokračuješ s knihou? Máma říkala, že ses nad tím nějak zaseknul.   
-     Hij hield zijn hoofd omhoog zodat haar hand kon doorgaan met zijn kruin en nek.  
+
+\ \ \ \ \   Op 4 augustus 1997 *starten* ze **met het systeem**.   
+```1``` Abychom odborně stavovsky *pokračovali* **v kultu staropruské svobody**.   
+```2``` ...  
+```3``` ...  
+```4``` ...  
+```5``` ...  
+```6``` ...  
+```7```  Jak *pokračuješ* **s knihou**? Máma říkala, že ses nad tím nějak zaseknul.   
+\ \ \ \ \ Hij hield zijn hoofd omhoog zodat haar hand kon *doorgaan* **met zijn kruin en nek**.
+ 
 
 
 ### inferovaní činnost	
@@ -313,5 +313,6 @@ proměnná | id_s | id_n
 objekt | obj | 2
 postmodifikace	| postmod | 3
 komplexita postmodifikace	| postmod_len_ch + postmod_len_w | 4
-premodifikace	| premod
+premodifikace	| premod | 5
+představitelnost | imag | 6
 

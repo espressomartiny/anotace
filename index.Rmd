@@ -53,7 +53,7 @@ Délka ve slovech/znacích, počítá se automaticky.
 Pokud se před substantivem ```(obj)``` objevuje premodifikátor, značí se jeho typ:
 
 ```adj```(*dokončí* **velký** román, zij *voltooit* haar **ultieme** trilogie)  
-```nu```(*dokončí* **druhý** román, zij *voltooit* de **tweede** trilogie)    
+```num```(*dokončí* **druhý** román, zij *voltooit* de **tweede** trilogie)    
 ```dem``` (*dokončí* **ten** román, zij *voltooit* **deze** trilogie)  
 ```poss``` (*dokončí* **svůj** román, zij *voltooit* **haar** ultieme trilogie)   
 ```indef``` (*dokončí* **nějaký** román, zij *voltooit* **enkele** trilogieën)    

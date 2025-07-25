@@ -114,10 +114,12 @@ substantivum ```obj``` má objektový význam [je nějak profilovaný/uzavřený
 
 pokud je substantivum deverbativní, určuje se míra dějovosti na třístupňové škále:
 
-verbální substantiva	```3```		Vy sami jste začali s bombardováním měst.
-dějová substantiva	```2```		Hledám vhodná slova, abych začal s výslechem.
-jiná deverbativa		```1```		Myslím, že večer bychom měli začít s těmi zaklínadly.
 
+\ \ \ \ \ 
+verbální substantiva	```3```		Vy sami jste začali s **bombardováním** měst.
+dějová substantiva	```2```		Hledám vhodná slova, abych začal s **výslechem**.
+jiná deverbativa	```1```		Myslím, že večer bychom měli začít s těmi **zaklínadly**.
+\ \ \ \ \ 
 
 ### míra předmětnosti	
 
